@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        body {
+                 font-family: Arial, sans-serif;
+             }
+             .navbar {
+                 background-color:#294e79;
+             }
+             .navbar-brand {
+                 color: white;
+                 font-size: 24px;
+             }
+             .navbar-brand img {
+                 height: 30px;
+                 margin-right: 10px;
+             }
+             .navbar-nav .nav-link {
+                 color: white;
+             }
+             .search-bar {
+                 display: flex;
+                 align-items: center;
+             }
+             .search-bar input[type="text"] {
+                 margin-right: 5px;
+             }
+             .content {
+                 margin: 20px;
+             }
+             .content h2 {
+                 color: #5e6a7c;
+             }
+             .content p {
+                 color: rgb(55, 52, 52);
+             }
+             .form-group label {
+                 display: block;
+             }
+             .form-group input, .form-group textarea {
+                 width: 100%;
+                 padding: 5px;
+                 margin-bottom: 10px;
+             }
+             .form-group input[type="submit"], .form-group input[type="reset"] {
+                 width: auto;
+                 padding: 5px 20px;
+             }
+             .info, .specials {
+                 border: 1px solid #ddd;
+                 padding: 10px;
+                 margin-top: 20px;
+             }
+             
+             .info h3, .specials h3 {
+                 color: #5e6a7c;
+             }
+             .p1{
+                color: red;
+                text-shadow: 2px 2px 4px #0000ff, 0 0 10px #00aaff;
+                 font-style: italic;
+             }
+             .footer {
+                 background-color: #294e79;
+                 color: white;
+                 text-align: center;
+                 padding: 10px 0;
+                 margin-top: 20px;
+             }
+       </style>
+
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg">
+   <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+     <img alt="Flower logo" src="../img/flower.png"/>
+     FlowerBox 360
+    </a>
+    <div class="collapse navbar-collapse">
+     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        Home
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        Promotion
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        Gift Baskets
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        Flower Services
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        About
+       </a>
+      </li>
+     </ul>
+     <form class="d-flex search-bar">
+      <input class="form-control me-2" placeholder="Search the site..." type="text"/>
+      <button class="btn btn-outline-light" type="submit">
+       GO
+      </button>
+     </form>
+    </div>
+   </div>
+  </nav>
+  <div class="container content">
+   <div class="row">
+    <div class="col-md-4">
+     <h2>
+      Why Not Contact Us Today!
+     </h2>
+     <p class="p1">
+      For FlowerBox 360 shoppers, that means not only can you send your friends and loved ones the highest quality flowers found on online, but that you can do so at a great value.
+     </p>
+     <form>
+      <div class="form-group">
+       <label for="name">
+        Name:
+       </label>
+       <input id="name" name="name" type="text"/>
+      </div>
+      <div class="form-group">
+       <label for="email">
+        Email:
+       </label>
+       <input id="email" name="email" type="email"/>
+      </div>
+      <div class="form-group">
+       <label for="telephone">
+        Telephone:
+       </label>
+       <input id="telephone" name="telephone" type="text"/>
+      </div>
+      <div class="form-group">
+       <label for="subject">
+        Subject:
+       </label>
+       <input id="subject" name="subject" type="text"/>
+      </div>
+      <div class="form-group">
+       <label for="message">
+        Message:
+       </label>
+       <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+      <div class="form-group">
+       <input type="submit" value="Submit"/>
+       <input type="reset" value="Reset"/>
+      </div>
+     </form>
+    </div>
+    <div class="col-md-4">
+     <div class="info">
+      <h3>
+       FlowerBox 360 Info!
+      </h3>
+      <p>
+       Operating Hours:
+       <br/>
+       Monday-Friday: 9.00am-5.00pm.
+       <br/>
+       Saturday:9.00am-1.00pm.
+       <br/>
+       Sunday: Closed (No Deliveries)
+       <br/>
+       ORDER ONLINE 24/7
+      </p>
+      <p>
+       Software Engineering Dept.
+       <br/>
+       Information Technology Faculty
+       <br/>
+       First Floor, H Building
+      </p>
+      <p>
+       12 Nguyen Van Bao St., Ward 4
+       <br/>
+       Go Vap District
+       <br/>
+       Ho Chi Minh City
+      </p>
+      <p>
+       Tel: 0283 9940 390
+       <br/>
+       Fax: 0283.9940 954
+      </p>
+     </div>
+    </div>
+    <div class="col-md-4">
+     <div class="specials">
+      <h3>
+       Discounts &amp; Specials
+      </h3>
+      <img alt="Pink rose flower" src="../img/rose.png" width="100%"/>
+      <p>
+       FlowerBox 360 offers many great discounts throughout the year, from coupons and coupon codes, to promo codes and other savings. We also offer military flower discounts to our wonderful troops!
+      </p>
+      <a href="#">
+       Read More »
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="footer">
+   <p>
+    Copyright © 2017 – All Rights Reserved – Software Engineering Department – Industrial University of Ho Chi Minh City
+   </p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai1b</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar {
+            background-color: #f8c8c8;
+            border-bottom: 1px solid #d3d3d3;
+        }
+        .navbar-nav .nav-link {
+            color: #000;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #000;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #000;
+        }
+        .navbar-brand:hover {
+            color: #000;
+        }
+        .menu-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #b22222;
+            margin-top: 20px;
+            text-shadow: 1px 1px 2px #ccc;
+        }
+        .menu-section {
+            background-color: #f8f8e8;
+            padding: 10px;
+            margin: 20px 0;
+        }
+        .menu-section h2 {
+            color: #b22222;
+            font-size: 1.5rem;
+        }
+        .menu-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .menu-section ul li {
+            margin: 5px 0;
+        }
+        .menu-section ul li a {
+            color: #b22222;
+            text-decoration: none;
+        }
+        .menu-section ul li a:hover {
+            text-decoration: underline;
+        }
+        .back-to-top {
+            color: #b22222;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-to-top:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+        <div class="menu-title">EXAMPLE CAFE MENU</div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><i class="fas fa-home"></i></a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">STARTER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MAIN COURSES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">DESSERTS</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Go</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="menu-section">
+            <h2>Starter</h2>
+            <ul>
+                <li>Chestnut and Mushroom Goujons <a href="#">(V)</a></li>
+                <li>Goat Cheese <a href="#">(V)</a></li>
+                <li>HONEY SOY CHICKEN KEBABS <a href="#">(V)</a></li>
+                <li>Seafood Salad <a href="#">(V)</a></li>
+            </ul>
+            <a class="back-to-top" href="#">Back to Top</a>
+        </div>
+        <div class="menu-section">
+            <h2>Desserts</h2>
+            <ul>
+                <li>Lemon Sorbet <a href="#">(V)</a></li>
+                <li>Chocolate Mud Pie <a href="#">(V)</a></li>
+                <li>Pecan Pie <a href="#">(V)</a></li>
+                <li>Selection of fine Cheeses from Around the World <a href="#">(V)</a></li>
+            </ul>
+            <a class="back-to-top" href="#">Back to Top</a>
+        </div>
+    </div>
+</body>
+</html>

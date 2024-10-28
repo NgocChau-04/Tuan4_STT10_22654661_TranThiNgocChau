@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai3</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        body {
+                 background-color: #87CEEB;
+                 color: white;
+                 font-family: Arial, sans-serif;
+             }
+             .navbar {
+                 background-color: #87CEEB;
+                 border-bottom: 2px solid white;
+             }
+             .navbar-nav .nav-link {
+                 color: white;
+                 font-weight: bold;
+             }
+             .navbar-brand {
+                 color: white;
+                 font-size: 24px;
+                 font-weight: bold;
+                 position: absolute;
+                 right: 20px;
+                 top: 10px;
+                 text-shadow: 2px 2px 4px #0000ff, 0 0 10px #00aaff;
+                 transition: transform 0.3s ease-in-out;
+             }
+             .navbar-brand:hover {
+                 transform: scale(1.1);
+             }
+             .container {
+                 margin-top: 20px;
+             }
+             .form-container {
+                 background-color: rgba(255, 255, 255, 0.5);
+                 padding: 20px;
+                 border-radius: 10px;
+             }
+             .form-control {
+                 margin-bottom: 10px;
+             }
+             .form-title {
+                 font-size: 24px;
+                 font-weight: bold;
+             }
+             .form-subtitle {
+                 font-size: 14px;
+             }
+             .footer {
+                 margin-top: 20px;
+                 text-align: center;
+                 font-size: 12px;
+             }
+             .footer .highlight {
+                 font-weight: bold;
+             }
+             .image-container {
+                 text-align: center;
+             }
+             .image-container img {
+                 max-width: 100%;
+                 border-radius: 10px;
+             }
+             .tagline {
+                 font-size: 24px;
+                 font-weight: bold;
+                 color: #0000FF;
+             }
+             .sub-tagline {
+                 font-size: 18px;
+                 color: #0000FF;
+             }
+       </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+         <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+            <a class="nav-link" href="#">
+             Home
+            </a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#">
+             Products
+            </a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#">
+             Services
+            </a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#">
+             About
+            </a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#">
+             Contact
+            </a>
+           </li>
+          </ul>
+         </div>
+         <a class="navbar-brand" href="#">
+          Sky World
+         </a>
+        </div>
+       </nav>
+       <div class="container">
+        <div class="row">
+         <div class="col-md-6">
+          <div class="form-container">
+           <div class="form-title">
+            Registration information
+           </div>
+           <div class="form-subtitle">
+            Start your travel planning right now with our on-line tour registration form. Just tell us a little about yourself and your group and one of our travel experts will contact you to create the perfect tour package custom built for your group's needs
+           </div>
+           <form>
+            <select class="form-control">
+             <option>
+              Mr.
+             </option>
+             <option>
+              Ms.
+             </option>
+             <option>
+              Mrs.
+             </option>
+             <option>
+              Dr.
+             </option>
+            </select>
+            <input class="form-control" placeholder="First Name" type="text"/>
+            <input class="form-control" placeholder="Mailing Address" type="text"/>
+            <input class="form-control" placeholder="City" type="text"/>
+            <input class="form-control" placeholder="Country" type="text"/>
+            <textarea class="form-control" placeholder="Specific questions or requests about your tour" rows="4"></textarea>
+            <button class="btn btn-primary" type="submit">
+             Submit
+            </button>
+            <button class="btn btn-secondary" type="reset">
+             Reset
+            </button>
+           </form>
+          </div>
+         </div>
+         <div class="col-md-6 image-container">
+          <img alt="A beautiful sky with clouds over a calm ocean" src="../img/sky.png"/>
+          <div class="tagline">
+           You've arrived.
+          </div>
+          <div class="sub-tagline">
+           Journeys as great as the destinations.
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="footer">
+        ©2016 Sky World Tours. All rights reserved.
+        <br/>
+        Contact information:
+        <span class="highlight">
+         Student Name | Student ID
+        </span>
+        | Testing date:
+        <span class="highlight">
+         16 Sept 2016
+        </span>
+       </div>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai1c</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+         body {
+                 font-family: 'Times New Roman', Times, serif;
+             }
+         .navbar {
+              background-color: #f8c8c8;
+              border-bottom: 1px solid #d3d3d3;
+             }
+         .navbar-nav .nav-link {
+            color: #000;
+            font-weight: bold;
+         }
+         .navbar-nav .nav-link:hover {
+            color: #000;
+         }
+         .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #000;
+         }
+         .navbar-brand:hover {
+            color: #000;
+         }
+         .menu-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #b22222;
+            margin-top: 20px;
+            text-shadow: 1px 1px 2px #ccc;
+         }
+         .sidebar {
+                 background-color: #f8d7da;
+                 padding: 10px;
+                 border-radius: 10px;
+             }
+         .sidebar a {
+                 display: block;
+                 padding: 10px;
+                 color: #d63384;
+                 text-decoration: none;
+                 border: 1px solid #e9c3c7;
+                 border-radius: 5px;
+                 margin-bottom: 5px;
+                 text-align: center;
+             }
+         .sidebar a:hover {
+                 background-color: #e9c3c7;
+             }
+         .content {
+                 padding: 20px;
+             }
+         .section-title {
+                 background-color: #f8d7da;
+                 color: #d63384;
+                 padding: 10px;
+                 text-align: center;
+                 font-size: 1.5rem;
+                 border-radius: 5px;
+             }
+         .events {
+                 background-color: #000;
+                 color: #fff;
+                 padding: 20px;
+                 border-radius: 10px;
+             }
+         .events h3 {
+                 color: #fff;
+             }
+         .events a {
+                 color: #d63384;
+             }
+         .footer {
+                 background-color: #f8d7da;
+                 color: #fff;
+                 text-align: center;
+                 padding: 10px;
+                 border-top: 2px solid #e9c3c7;
+             }
+       </style>
+</head>
+<body>
+    <div class="menu-title">EXAMPLE CAFE MENU</div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fas fa-home"></i></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">STARTER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MAIN COURSES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DESSERTS</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Go</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+       <div class="container-fluid mt-3">
+        <div class="row">
+         <div class="col-md-2">
+          <div class="sidebar">
+           <a href="#">
+            Cafe Latte
+           </a>
+           <a href="#">
+            Cappuccino
+           </a>
+           <a href="#">
+            Ocean Blue
+           </a>
+           <a href="#">
+            Ice-cream Cafe
+           </a>
+           <a href="#">
+            Order Online
+           </a>
+           <img alt="Group of people in a cafe" class="img-fluid mt-3" height="150" src="../img/menu cafe.png" width="150"/>
+          </div>
+         </div>
+         <div class="col-md-7">
+          <div class="content">
+           <div class="section-title">
+            Starter
+           </div>
+           <ul>
+            <li>
+             Chestnut and Mushroom Goujons
+             <a href="#">
+              (x)
+             </a>
+            </li>
+            <li>
+             Goat Cheese
+             <a href="#">
+              (x)
+             </a>
+            </li>
+            <li>
+             HONEY SOY CHICKEN KEBABS
+             <a href="#">
+              (x)
+             </a>
+            </li>
+            <li>
+             Seafood Salad
+             <a href="#">
+              (x)
+             </a>
+            </li>
+           </ul>
+           <a href="#">
+            Back to Top
+           </a>
+           <div class="section-title mt-4">
+            Desserts
+           </div>
+           <ul>
+            <li>
+             Lemon Sorbet
+             <a href="#">
+              (x)
+             </a>
+            </li>
+            <li>
+             Chocolate Mud Pie
+             <a href="#">
+              (x)
+             </a>
+            </li>
+            <li>
+             Pecan Pie
+             <a href="#">
+              (x)
+             </a>
+            </li>
+            <li>
+             Selection of fine Cheeses from Around the World
+             <a href="#">
+              (x)
+             </a>
+            </li>
+           </ul>
+           <a href="#">
+            Back to Top
+           </a>
+           <div class="section-title mt-4">
+            Information
+           </div>
+           <form>
+            <div class="row mb-3">
+             <div class="col">
+              <input class="form-control" placeholder="First Name" type="text"/>
+             </div>
+             <div class="col">
+              <input class="form-control" placeholder="Last Name" type="text"/>
+             </div>
+            </div>
+            <div class="row mb-3">
+             <div class="col">
+              <input class="form-control" placeholder="Email" type="email"/>
+             </div>
+             <div class="col">
+              <input class="form-control" placeholder="Telephone" type="tel"/>
+             </div>
+            </div>
+            <div class="row mb-3">
+             <div class="col">
+              <select class="form-select">
+               <option>
+                USA
+               </option>
+              </select>
+             </div>
+             <div class="col">
+              <div class="form-check">
+               <input class="form-check-input" id="vietnamese" name="nationality" type="radio"/>
+               <label class="form-check-label" for="vietnamese">
+                Vietnamese
+               </label>
+              </div>
+              <div class="form-check">
+               <input class="form-check-input" id="foreigner" name="nationality" type="radio"/>
+               <label class="form-check-label" for="foreigner">
+                Foreigner
+               </label>
+              </div>
+             </div>
+            </div>
+            <div class="mb-3">
+             <textarea class="form-control" placeholder="Comment"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">
+             Submit
+            </button>
+            <button class="btn btn-secondary" type="reset">
+             Cancel
+            </button>
+           </form>
+          </div>
+         </div>
+         <div class="col-md-3">
+          <div class="events">
+           <h3>
+            Events
+           </h3>
+           <h4>
+            Regular Meetings
+           </h4>
+           <img alt="People in a meeting" class="img-fluid" height="150" src="../img/meeting.png" width="250"/>
+           <p>
+            Host your regular team meetings or activities in the comfort of your own private room.
+            <a href="#">
+             Read more...
+            </a>
+           </p>
+           <h4>
+            Product Launches
+           </h4>
+           <img alt="People at a product launch event" class="img-fluid" height="150" src="../img/Launches.png" width="250"/>
+           <p>
+            Launch your product with ease in a space that truly fits its image.
+            <a href="#">
+             Read more...
+            </a>
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+       <footer class="footer mt-3">
+        <p>
+         ABC Company © - 12345678 - abccoffee@gmail.com
+        </p>
+       </footer>
+    
+</body>
+</html>

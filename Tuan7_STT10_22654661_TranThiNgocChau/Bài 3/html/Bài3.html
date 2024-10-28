@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài3</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        function validateForm() {
+            const form = document.forms["registerForm"];
+            const fullName = form["fullName"].value.trim();
+            const username = form["username"].value.trim();
+            const password = form["password"].value.trim();
+            const confirmPassword = form["confirmPassword"].value.trim();
+            const phone = form["phone"].value.trim();
+            const address = form["address"].value.trim();
+            const email = form["email"].value.trim();
+            const hobby = form["hobby"].value.trim();
+
+            if (!fullName) {
+                alert("Họ và tên là bắt buộc.");
+                form["fullName"].focus();
+                return false;
+            }
+
+            if (!username || username.length < 6) {
+                alert("Tên Đăng nhập phải có ít nhất 6 ký tự.");
+                form["username"].focus();
+                return false;
+            }
+
+            if (!password) {
+                alert("Mật khẩu là bắt buộc.");
+                form["password"].focus();
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert("Xác nhận mật khẩu không khớp.");
+                form["confirmPassword"].focus();
+                return false;
+            }
+
+            if (phone && !/^\d+$/.test(phone)) {
+                alert("Điện thoại phải là số.");
+                form["phone"].focus();
+                return false;
+            }
+
+            if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                alert("Email không đúng mẫu.");
+                form["email"].focus();
+                return false;
+            }
+
+            form.action = "thongtin.htm";
+            return true;
+        }
+    </script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="w-full max-w-md p-4 bg-green-100 border border-green-500">
+        <h2 class="text-center text-lg font-semibold mb-4">Register Form</h2>
+        <form name="registerForm" onsubmit="return validateForm()">
+            <div class="mb-2 flex items-center">
+                <label class="w-1/3">Họ và tên (*):</label>
+                <input type="text" name="fullName" class="w-2/3 border border-green-500 p-1">
+            </div>
+            <div class="mb-2 flex items-center">
+                <label class="w-1/3">Tên Đăng nhập (*):</label>
+                <input type="text" name="username" class="w-2/3 border border-green-500 p-1">
+            </div>
+            <div class="mb-2 flex items-center">
+                <label class="w-1/3">Mật khẩu (*):</label>
+                <input type="password" name="password" class="w-2/3 border border-green-500 p-1">
+            </div>
+            <div class="mb-2 flex items-center">
+                <label class="w-1/3">Xác nhận mật khẩu (*):</label>
+                <input type="password" name="confirmPassword" class="w-2/3 border border-green-500 p-1">
+            </div>
+            <div class="mb-2 flex items-center">
+                <label class="w-1/3">Ngày sinh:</label>
+                <select name="day" class="border border-green-500 p-1">
+                    <option>1</option>
+                </select>
+                <label class="mx-2">Tháng:</label>
+                <select name="month" class="border border-green-500 p-1">
+                    <option>1</option>
+                </select>
+                <label class="mx-2">Năm:</label>
+                <select name="year" class="border border-green-500 p-1">
+                    <option>1940</option>
+                </select>
+            </div>
+            <div class="mb-2 flex items-center">
+                <label class="w-1/3">Điện thoại:</label>
+                <input type="text" name="phone" class="w-2/3 border border-green-500 p-1">
+            </div>
+            <div class="mb-2 flex items-center">
+                <label class="w-1/3">Địa chỉ:</label>
+                <input type="text" name="address" class="w-2/3 border border-green-500 p-1">
+            </div>
+            <div class="mb-2 flex items-center">
+                <label class="w-1/3">Email khác:</label>
+                <input type="text" name="email" class="w-2/3 border border-green-500 p-1">
+            </div>
+            <div class="mb-2 flex items-center">
+                <label class="w-1/3">Sở thích:</label>
+                <select name="hobby" class="w-2/3 border border-green-500 p-1">
+                    <option>Ca Nhạc</option>
+                </select>
+            </div>
+            <div class="flex justify-center mt-4">
+                <button type="submit" class="bg-gray-200 border border-green-500 px-4 py-1 mx-2">Dang Ky</button>
+                <button type="reset" class="bg-gray-200 border border-green-500 px-4 py-1 mx-2">Huy</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

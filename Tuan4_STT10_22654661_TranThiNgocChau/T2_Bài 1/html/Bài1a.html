@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai1</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        /* Định dạng tiêu đề */
+        .header h1 {
+            color: red;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'Times New Roman', serif;
+        }
+
+        /* Định dạng thanh điều hướng */
+        .navbar-nav .nav-link {
+            color: purple;
+            font-weight: bold;
+        }
+
+        /* Định dạng các tiêu đề Starter và Desserts */
+        h1 {
+            background-color: #f9f9d1;
+            color: red;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        /* Định dạng nút Back to Top */
+        .btn-link {
+            font-weight: bold;
+            text-decoration: underline;
+            color: red;
+        }
+
+        /* Định dạng danh sách thực đơn */
+        ul li span {
+            color: red;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* Căn chỉnh nội dung */
+        .content {
+            padding: 20px;
+        }
+
+        /* Định dạng màu nền */
+        .bg-light-yellow {
+            background-color: #f9f9d1;
+        }
+    </style>
+  
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header text-center p-4 bg-light">
+            <h1 class="text-danger">EXAMPLE CAFE MENU</h1>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand text-danger" href="#">Cafe Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-dark" href="#">Starter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-dark" href="#">Main</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-dark" href="#">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-dark" href="#">Desserts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="content py-4">
+            <div class="maincontent">
+                <h1 class="bg-light-yellow">Starter</h1>
+                <ul class="list-unstyled">
+                    <li>Chesnut and Mushroom Goujons <span>(v)</span></li>
+                    <li>Goat Cheese <span>(v)</span></li>
+                    <li>HONEY SOY CHICKEN KEBABS <span>(V)</span></li>
+                    <li>Seafood Salad <span>(v)</span></li>
+                </ul>
+                <a href="#" class="btn btn-link">Back to Top</a>
+
+                <h1 class="bg-light-yellow mt-4">Desserts</h1>
+                <ul class="list-unstyled">
+                    <li>Lemon Sorbet <span>(v)</span></li>
+                    <li>Chocolate Mud Pie <span>(v)</span></li>
+                    <li>Pecan Pie <span>(v)</span></li>
+                    <li>Selection of fine Cheeses from Around the World <span>(v)</span></li>
+                </ul>
+                <a href="#" class="btn btn-link">Back to Top</a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer text-center py-3 bg-light">
+          
+        </div>
+    </div>
+</body>
+</html>
